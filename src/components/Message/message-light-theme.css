@@ -1,0 +1,146 @@
+.message-container.light-theme {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.message-container.light-theme .message-author {
+  display: flex;
+  font-size: 13px;
+  padding-left: 50px;
+  height: 20px;
+}
+.message-container.light-theme .message-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.message-container.light-theme .message-content .main-message {
+  display: grid;
+}
+.message-container.light-theme .message-content .main-message .message-line {
+  display: flex;
+  justify-self: left;
+  width: fit-content;
+  flex-direction: row;
+  max-width: 500px;
+  align-items: flex-end;
+}
+.message-container.light-theme .message-content .main-message .message-line .mess {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  word-break: break-word;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  -webkit-box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  color: black;
+  background-color: white;
+}
+.message-container.light-theme .message-content .main-message .message-line .mess .highlight {
+  background-color: lightseagreen;
+  justify-self: left;
+  margin: 0 1px;
+}
+.message-container.light-theme .message-content .main-message .message-line .avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.message-container.light-theme .message-content .main-message .media-container {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px 5px;
+  direction: ltr;
+}
+.message-container.light-theme .message-content .main-message .media-container .media-item .send-image, .message-container.light-theme .message-content .main-message .media-container .media-item .send-video {
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease;
+  object-fit: contain;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.4);
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #7e7e7e;
+}
+.message-container.light-theme .message-content .main-message .media-container .media-item .avatar {
+  width: 30px;
+  height: 30px;
+}
+.message-container.light-theme .message-content .main-message .media-container .media-item:first-child {
+  display: flex;
+  align-items: flex-end;
+  width: fit-content;
+}
+.message-container.light-theme .message-content .main-message .media-container .media-item:nth-child(6) {
+  grid-column: 2;
+}
+.message-container.light-theme .message-content .main-message .media-container .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+}
+.message-container.light-theme .message-content .main-message .media-container .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.message-container.light-theme .message-content .main-message .media-container .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #888;
+}
+.message-container.light-theme .message-content .main-message .media-container .modal img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+.message-container.light-theme .message-content .main-message .file-container {
+  display: flex;
+  justify-self: left;
+  width: fit-content;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.message-container.light-theme .message-content .main-message .file-container .avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.message-container.light-theme .message-content .main-message .file-container .file {
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+.message-container.light-theme .message-content .main-message .file-container .file a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.message-container.light-theme .message-content .main-message .file-container .file img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.message-container.light-theme .message-content .time-message {
+  display: none;
+}
+.message-container.light-theme .message-content .time-message p {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=message-light-theme.css.map */
